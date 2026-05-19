@@ -35,10 +35,10 @@ export const metadata: Metadata = {
     siteName: "Boris 3D Artist",
     images: [
       {
-        url: "/assets/b1.jpg",
-        width: 2020,
-        height: 1136,
-        alt: "3D work by Boris Lebedev"
+        url: "/assets/boris-og-v2.png",
+        width: 1432,
+        height: 792,
+        alt: "BORIS 3D-артист"
       }
     ],
     locale: "ru_RU",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "BORIS | 3D-артист",
     description: "Портфолио Бориса Лебедева: 3D-модели, окружение и текстуры.",
-    images: ["/assets/b1.jpg"]
+    images: ["/assets/boris-og-v2.png"]
   },
   robots: {
     index: true,

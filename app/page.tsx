@@ -21,6 +21,21 @@ const fade = {
   show: { opacity: 1, y: 0, transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1] } }
 };
 
+const contactLinks = [
+  {
+    label: "Telegram",
+    href: "https://t.me/boorba"
+  },
+  {
+    label: "ArtStation",
+    href: "https://www.artstation.com/boorba1994"
+  },
+  {
+    label: "Email",
+    href: "mailto:boorba1994@gmail.com"
+  }
+];
+
 export default function Home() {
   return (
     <>
@@ -157,9 +172,9 @@ export default function Home() {
             </h2>
           </div>
           <div className="grid self-end md:col-span-4 md:col-start-9">
-            {["Telegram", "ArtStation", "Instagram", "Email"].map((link) => (
-              <a key={link} href={link === "Email" ? "mailto:boris@example.com" : "#"} className="flex justify-between border-b border-white/10 py-6 text-3xl font-light tracking-[-.025em] text-silver/72 transition hover:pl-4 hover:text-silver">
-                {link}<span className="text-glow">↗</span>
+            {contactLinks.map((link) => (
+              <a key={link.label} href={link.href} target={link.href.startsWith("http") ? "_blank" : undefined} rel={link.href.startsWith("http") ? "noreferrer" : undefined} className="flex justify-between border-b border-white/10 py-6 text-3xl font-light tracking-[-.025em] text-silver/72 transition hover:pl-4 hover:text-silver">
+                {link.label}<span className="text-glow">↗</span>
               </a>
             ))}
           </div>
