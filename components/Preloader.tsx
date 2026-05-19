@@ -19,7 +19,7 @@ export function Preloader() {
           exit={{ opacity: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }}
         >
           <div className="grid w-[min(360px,58vw)] gap-5 text-center">
-            <div className="text-xs font-black tracking-[0.5em] text-silver">BORIS</div>
+            <div className="text-xs font-medium tracking-[0.42em] text-silver">BORIS</div>
             <div className="h-px overflow-hidden bg-white/10">
               <motion.div
                 className="h-full bg-gradient-to-r from-transparent via-glow to-gold"

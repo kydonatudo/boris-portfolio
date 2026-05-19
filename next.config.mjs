@@ -7,6 +7,21 @@ const nextConfig = {
     formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 31536000
   },
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "boris3d.online"
+          }
+        ],
+        destination: "https://www.boris3d.online/:path*",
+        permanent: true
+      }
+    ];
+  },
   async headers() {
     return [
       {

@@ -11,42 +11,42 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: "villa",
-    title: "Private Villa Environment",
-    category: "Environment / Architectural 3D",
+    title: "Частная вилла",
+    category: "Окружение / архитектура",
     tags: ["Environments", "Cinematics"],
     cover: "/assets/b3.jpg",
     images: ["/assets/b1.jpg", "/assets/b3.jpg", "/assets/b4.jpg", "/assets/b2.jpg"],
     description:
-      "Экстерьерная сцена с фасадом, двором, воротами, ограждениями, светильниками, фактурой стен и несколькими презентационными ракурсами."
+      "Архитектурная сцена: фасад, двор, ворота, ограждения, светильники, фактура стен и несколько ракурсов для презентации."
   },
   {
     id: "building",
-    title: "Residential Building",
-    category: "Architecture / Production Asset",
+    title: "Жилой дом",
+    category: "Архитектура / 3D-модель",
     tags: ["Environments", "Cinematics"],
     cover: "/assets/b7.jpg",
     images: ["/assets/b5.jpg", "/assets/b7.jpg", "/assets/b8.jpg", "/assets/b9.jpg", "/assets/b10.jpg"],
     description:
-      "Модульный жилой объект с фасадными системами, стеклом, балконами, входными зонами и чистой студийной подачей."
+      "Многоэтажный жилой дом с фасадом, окнами, балконами, входными зонами и чистой подачей на нейтральном фоне."
   },
   {
     id: "helmet",
-    title: "Technical Helmet Asset",
-    category: "Hard Surface / Substance Painter",
+    title: "Технический шлем",
+    category: "Предметная модель / текстуры",
     tags: ["Hard Surface"],
     cover: "/assets/b13.jpg",
     images: ["/assets/b13.jpg", "/assets/b12.jpg", "/assets/b14.jpg"],
     description:
-      "Предметный hard-surface ассет с кабельными деталями, wireframe-превью, material separation и текстурированием."
+      "Предметная модель с кабелями, креплениями, аккуратной сеткой, разделением материалов и текстурированием."
   },
   {
     id: "diorama",
-    title: "Fantasy Diorama Blockout",
-    category: "Miniature Culture / Environment Sculpt",
+    title: "Фэнтези-диорама",
+    category: "Миниатюры / окружение",
     tags: ["Miniatures", "Experimental"],
     cover: "/assets/b17.jpg",
     images: ["/assets/b17.jpg", "/assets/b15.jpg", "/assets/b16.jpg", "/assets/b11.jpg"],
     description:
-      "Фэнтезийная сцена с органическими формами, камнями, torii-inspired конструкцией, подвесными объектами и tabletop worldbuilding атмосферой."
+      "Фэнтезийная сцена с камнями, органическими формами, деревом, подвесными деталями и настроением настольной миниатюры."
   }
 ];

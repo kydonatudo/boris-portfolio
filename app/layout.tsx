@@ -4,33 +4,34 @@ import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin", "cyrillic"],
+  weight: ["300", "400", "500", "600"],
   variable: "--font-inter",
   display: "swap"
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://boris3d.online"),
-  title: "BORIS | 3D Artist",
+  metadataBase: new URL("https://www.boris3d.online"),
+  title: "BORIS | 3D-артист",
   description:
-    "Портфолио Бориса Лебедева — 3D Artist для игр, фильмов, virtual production, окружений, персонажей и cinematic assets.",
+    "Портфолио Бориса Лебедева — 3D-артиста. Модели, окружение, архитектура, предметы, текстуры и миниатюры.",
   applicationName: "Boris 3D Artist",
   authors: [{ name: "Борис Лебедев" }],
   creator: "Борис Лебедев",
   keywords: [
     "Борис Лебедев",
     "3D Artist",
-    "3D artist portfolio",
-    "game art",
-    "virtual production",
-    "environment artist",
-    "hard surface",
+    "3D портфолио",
+    "3D моделирование",
+    "окружение",
+    "архитектурная визуализация",
+    "текстурирование",
     "miniatures"
   ],
   openGraph: {
-    title: "BORIS | 3D Artist",
+    title: "BORIS | 3D-артист",
     description:
-      "Кинематографичное портфолио 3D Artist: окружения, hard-surface, персонажи, миниатюры и production-ready ассеты.",
-    url: "https://boris3d.online",
+      "Портфолио Бориса Лебедева: 3D-модели, окружение, архитектура, предметы, текстуры и миниатюры.",
+    url: "https://www.boris3d.online",
     siteName: "Boris 3D Artist",
     images: [
       {
@@ -45,8 +46,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "BORIS | 3D Artist",
-    description: "3D Artist portfolio for games, films and virtual production.",
+    title: "BORIS | 3D-артист",
+    description: "Портфолио Бориса Лебедева: 3D-модели, окружение и текстуры.",
     images: ["/assets/b1.jpg"]
   },
   robots: {
@@ -58,7 +59,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="ru">
-      <body className={inter.variable}>{children}</body>
+      <body className={`${inter.variable} font-sans font-light`}>{children}</body>
     </html>
   );
 }
